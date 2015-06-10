@@ -380,6 +380,7 @@ extern int adreno_idler(struct devfreq_dev_status stats, struct devfreq *devfreq
 		 unsigned long *freq);
 #endif
 
+<<<<<<< HEAD
 #if 1
 
 // mapping gpu level calculated linear conservation half curve values into a
@@ -401,6 +402,8 @@ static int lvl_divider_map_3[] = {10,1,1,1,1,14,12    ,1,1};
 
 #endif
 
+=======
+>>>>>>> 0eb7397... Introduce Adreno idler for devfreq-based Adreno devices
 static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq,
 				u32 *flag)
 {
@@ -429,6 +432,10 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq,
 	}
 
 	*freq = stats.current_frequency;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0eb7397... Introduce Adreno idler for devfreq-based Adreno devices
 #ifdef CONFIG_ADRENO_IDLER
 	if (adreno_idler(stats, devfreq, freq)) {
 		/* adreno_idler has asked to bail out now */
