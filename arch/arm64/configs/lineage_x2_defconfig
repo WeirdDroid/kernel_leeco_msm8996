@@ -594,5 +594,6 @@ CONFIG_QMI_ENCDEC=y
 =======
 # CONFIG_QMI_ENCDEC_DEBUG is not set
 # CONFIG_STRICT_MEMORY_RWX is not set
+CONFIG_FINGERPRINT_BOOST=y
 
 >>>>>>> 2eef9b6... defconfig: enable powersuspend
