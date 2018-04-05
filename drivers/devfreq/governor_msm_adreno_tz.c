@@ -608,7 +608,8 @@ static int adrenoboost_debug(struct devfreq *devfreq, unsigned long *freq,
 {
 	struct devfreq_msm_adreno_tz_data *priv = devfreq->data;
 	struct devfreq_dev_status stats;
-	int level = 0;
+	int val, level = 0;
+	int last_level = priv->bin.last_level;
 	if (!jump_dir)
 		pr_info("ADRENO jumping\n");
 	else if (jump_dir == 1)
