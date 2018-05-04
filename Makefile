@@ -370,13 +370,8 @@ GCC_OPT		:=	-ffast-math \
 
 # Make variables (CC, etc...)
 AS		= $(CROSS_COMPILE)as
-<<<<<<< HEAD
-LD		= $(CROSS_COMPILE)ld
-REAL_CC		= $(CCACHE) $(CROSS_COMPILE)gcc
-=======
 LD		= $(CROSS_COMPILE)ld.gold -O3 --strip-debug
 REAL_CC		= $(CROSS_COMPILE)gcc $(GCC_OPT)
->>>>>>> 14c8dc6... Makefile: Remake
 CPP		= $(CC) -E
 AR		= $(CROSS_COMPILE)ar
 NM		= $(CROSS_COMPILE)nm
